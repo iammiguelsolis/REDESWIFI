@@ -21,12 +21,12 @@ const SECTIONS = [
     subtitle: 'Contexto Histórico',
     content: (
       <>
-        <p className="text-slate-300 leading-relaxed text-[15px]">
+        <p className="text-slate-300 leading-relaxed text-xs">
           En plena <strong className="text-white">Guerra Fría (años 1960)</strong>, el Departamento
           de Defensa de EE.UU. enfrentaba un problema crítico: sus redes de comunicación
           militar eran <strong className="text-red-400">extremadamente vulnerables</strong>.
         </p>
-        <div className="bg-red-500/5 border border-red-500/20 rounded-xl p-4 my-4">
+        <div className="bg-red-500/5 border border-red-500/20 rounded-lg p-3 my-3">
           <div className="flex items-start gap-3">
             <AlertTriangle className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
             <p className="text-red-300/90 text-sm leading-relaxed">
@@ -36,7 +36,7 @@ const SECTIONS = [
             </p>
           </div>
         </div>
-        <p className="text-slate-300 leading-relaxed text-[15px]">
+        <p className="text-slate-300 leading-relaxed text-xs">
           El investigador <strong className="text-white">Paul Baran</strong> (RAND Corporation, 1964)
           propuso una idea revolucionaria: ¿y si los mensajes no viajaran por un único
           camino fijo, sino que se <strong className="text-indigo-300">dividieran en pedazos
@@ -59,14 +59,14 @@ const SECTIONS = [
     subtitle: 'El modelo antiguo (Telefonía)',
     content: (
       <>
-        <p className="text-slate-300 leading-relaxed text-[15px]">
+        <p className="text-slate-300 leading-relaxed text-xs">
           Así funcionaban las <strong className="text-white">redes telefónicas
           tradicionales</strong>. Cuando llamabas a alguien, la red establecía
           un <strong className="text-amber-300">camino físico dedicado</strong> entre
           tu teléfono y el del destinatario.
         </p>
 
-        <div className="bg-slate-800/60 rounded-xl p-4 my-4 border border-slate-700/50">
+        <div className="bg-slate-800/60 rounded-lg p-3 my-3 border border-slate-700/50">
           <p className="text-xs text-slate-500 uppercase tracking-widest font-semibold mb-3">Cómo funciona</p>
           <div className="space-y-2.5">
             {[
@@ -83,7 +83,7 @@ const SECTIONS = [
           </div>
         </div>
 
-        <div className="bg-red-500/5 border border-red-500/20 rounded-xl p-4">
+        <div className="bg-red-500/5 border border-red-500/20 rounded-lg p-3">
           <div className="flex items-start gap-3">
             <X className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
             <div>
@@ -109,14 +109,14 @@ const SECTIONS = [
     subtitle: 'Internet moderno (TCP/IP)',
     content: (
       <>
-        <p className="text-slate-300 leading-relaxed text-[15px]">
+        <p className="text-slate-300 leading-relaxed text-xs">
           Este es el modelo que usa <strong className="text-white">Internet</strong>. Tu
           mensaje se <strong className="text-indigo-300">divide en múltiples paquetes
           pequeños</strong>, cada uno con su propia dirección de destino. Cada paquete
           viaja de forma independiente.
         </p>
 
-        <div className="bg-slate-800/60 rounded-xl p-4 my-4 border border-slate-700/50">
+        <div className="bg-slate-800/60 rounded-lg p-3 my-3 border border-slate-700/50">
           <p className="text-xs text-slate-500 uppercase tracking-widest font-semibold mb-3">Cómo funciona</p>
           <div className="space-y-2.5">
             {[
@@ -133,7 +133,7 @@ const SECTIONS = [
           </div>
         </div>
 
-        <div className="bg-green-500/5 border border-green-500/20 rounded-xl p-4">
+        <div className="bg-green-500/5 border border-green-500/20 rounded-lg p-3">
           <div className="flex items-start gap-3">
             <CheckCircle2 className="w-5 h-5 text-green-400 shrink-0 mt-0.5" />
             <div>
@@ -159,15 +159,15 @@ const SECTIONS = [
     subtitle: 'Guía paso a paso',
     content: (
       <>
-        <div className="space-y-5">
+        <div className="space-y-3">
           {/* Step 1 */}
-          <div className="flex gap-4">
-            <div className="shrink-0 w-10 h-10 rounded-xl bg-indigo-600/20 border border-indigo-500/30 flex items-center justify-center">
-              <span className="text-indigo-400 font-bold">1</span>
+          <div className="flex gap-3">
+            <div className="shrink-0 w-7 h-7 rounded-lg bg-indigo-600/20 border border-indigo-500/30 flex items-center justify-center">
+              <span className="text-indigo-400 font-semibold text-xs">1</span>
             </div>
             <div>
-              <p className="text-white font-semibold mb-1">Elige el modo de red</p>
-              <p className="text-slate-400 text-sm leading-relaxed">
+              <p className="text-white font-medium text-xs mb-0.5">Elige el modo de red</p>
+              <p className="text-slate-400 text-[11px] leading-relaxed">
                 En la barra inferior, alterna entre <strong className="text-amber-300">⚡ Circuitos</strong> (red
                 antigua tipo telefónica) y <strong className="text-indigo-300">📦 Paquetes</strong> (Internet
                 moderno).
@@ -176,13 +176,13 @@ const SECTIONS = [
           </div>
 
           {/* Step 2 */}
-          <div className="flex gap-4">
-            <div className="shrink-0 w-10 h-10 rounded-xl bg-red-600/20 border border-red-500/30 flex items-center justify-center">
-              <span className="text-red-400 font-bold">2</span>
+          <div className="flex gap-3">
+            <div className="shrink-0 w-7 h-7 rounded-lg bg-red-600/20 border border-red-500/30 flex items-center justify-center">
+              <span className="text-red-400 font-semibold text-xs">2</span>
             </div>
             <div>
-              <p className="text-white font-semibold mb-1">Rompe la red (simula un ataque)</p>
-              <p className="text-slate-400 text-sm leading-relaxed">
+              <p className="text-white font-medium text-xs mb-0.5">Rompe la red (simula un ataque)</p>
+              <p className="text-slate-400 text-[11px] leading-relaxed">
                 Haz <strong className="text-white">clic en cualquier router</strong> (nodos B, C, D, E
                 o F) para desactivarlo. El nodo se atenuará con un borde rojo. Esto simula
                 la destrucción física de un punto de la infraestructura.
@@ -191,13 +191,13 @@ const SECTIONS = [
           </div>
 
           {/* Step 3 */}
-          <div className="flex gap-4">
-            <div className="shrink-0 w-10 h-10 rounded-xl bg-green-600/20 border border-green-500/30 flex items-center justify-center">
-              <span className="text-green-400 font-bold">3</span>
+          <div className="flex gap-3">
+            <div className="shrink-0 w-7 h-7 rounded-lg bg-green-600/20 border border-green-500/30 flex items-center justify-center">
+              <span className="text-green-400 font-semibold text-xs">3</span>
             </div>
             <div>
-              <p className="text-white font-semibold mb-1">Envía el mensaje</p>
-              <p className="text-slate-400 text-sm leading-relaxed">
+              <p className="text-white font-medium text-xs mb-0.5">Envía el mensaje</p>
+              <p className="text-slate-400 text-[11px] leading-relaxed">
                 Presiona <strong className="text-white">"Enviar Mensaje"</strong> y observa cómo
                 reacciona cada sistema. En circuitos verás un solo punto de luz; en paquetes
                 verás 4 puntos de colores diferentes.
@@ -206,13 +206,13 @@ const SECTIONS = [
           </div>
 
           {/* Step 4 */}
-          <div className="flex gap-4">
-            <div className="shrink-0 w-10 h-10 rounded-xl bg-amber-600/20 border border-amber-500/30 flex items-center justify-center">
-              <span className="text-amber-400 font-bold">4</span>
+          <div className="flex gap-3">
+            <div className="shrink-0 w-7 h-7 rounded-lg bg-amber-600/20 border border-amber-500/30 flex items-center justify-center">
+              <span className="text-amber-400 font-semibold text-xs">4</span>
             </div>
             <div>
-              <p className="text-white font-semibold mb-1">Observa la diferencia</p>
-              <p className="text-slate-400 text-sm leading-relaxed">
+              <p className="text-white font-medium text-xs mb-0.5">Observa la diferencia</p>
+              <p className="text-slate-400 text-[11px] leading-relaxed">
                 <strong className="text-red-300">Circuitos:</strong> Si un nodo de la ruta cae,
                 la transmisión <strong>falla en seco</strong>.<br/>
                 <strong className="text-green-300">Paquetes:</strong> Los datos
@@ -223,7 +223,7 @@ const SECTIONS = [
         </div>
 
         {/* Experiments */}
-        <div className="mt-6 bg-slate-800/60 rounded-xl p-4 border border-slate-700/50">
+        <div className="mt-4 bg-slate-800/60 rounded-lg p-3 border border-slate-700/50">
           <div className="flex items-center gap-2 mb-3">
             <Lightbulb className="w-4 h-4 text-amber-400" />
             <p className="text-xs text-slate-400 uppercase tracking-widest font-semibold">Experimentos sugeridos</p>
